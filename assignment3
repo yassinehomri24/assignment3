@@ -1,0 +1,52 @@
+//question1
+num = float(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
+//question2
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+print("{0} is Even number". format(num))
+else:
+print("{0} is Odd number". format(num))
+//question3
+year = int(input("Enter a year: "))  
+if (year % 4) == 0:  
+   if (year % 100) == 0:  
+       if (year % 400) == 0:  
+           print("{0} is a leap year".format(year))  
+       else:  
+           print("{0} is not a leap year".format(year))
+            
+//question4 
+num = int(input("Enter a number: "))  
+  
+if num > 1:  
+   for i in range(2,num):  
+       if (num % i) == 0:  
+           print(num,"is not a prime number")  
+           print(i,"times",num//i,"is",num)  
+           break  
+   else:  
+       print(num,"is a prime number")  
+         
+else:  
+   print(num,"is not a prime number")
+//question5
+
+lower = 1
+upper = 10000
+
+print("Prime numbers between", lower, "and", upper, "are:")
+
+for num in range(lower, upper + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
